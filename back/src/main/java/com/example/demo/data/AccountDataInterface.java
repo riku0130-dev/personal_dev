@@ -8,7 +8,7 @@ public interface AccountDataInterface {
 
 	public String getUserid();
 
-	public void setUserid(String userId);
+	public void setUserid(String userid);
 
 	public String getPassword();
 

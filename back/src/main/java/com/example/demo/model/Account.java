@@ -19,7 +19,7 @@ public class Account implements AccountDataInterface {
 	private int id;
 
 	@Column(nullable = false, unique = true)
-	private String userId;
+	private String userid;
 
 	@Column(nullable = false)
 	private String password;
@@ -34,11 +34,11 @@ public class Account implements AccountDataInterface {
 	}
 
 	public String getUserid() {
-		return userId;
+		return userid;
 	}
 
-	public void setUserid(String userId) {
-		this.userId = userId;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
 
 	public String getPassword() {

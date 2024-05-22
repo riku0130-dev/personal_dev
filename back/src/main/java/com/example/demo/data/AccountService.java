@@ -12,17 +12,14 @@ public class AccountService {
 	@Autowired
 	private AccountRepository accountRepository;
 
-	public int add(AccountDataInterface item) {
+	public int add(Account item) {
 		System.out.println("Service:add [" + item.getUserid() + "]");
-		if (item instanceof Account) {
-			Account savedItem = accountRepository.saveAndFlush((Account) item);
-			return savedItem.getId();
-		}
-		return 0;
+		Account savedItem = accountRepository.saveAndFlush(item);
+		return savedItem.getId();
 	}
 
-	public Account findByUserId(String userId) {
-		return accountRepository.findByUserId(userId);
+	public Account findByUserid(String userid) {
+		return accountRepository.findByUserid(userid);
 	}
 
 }

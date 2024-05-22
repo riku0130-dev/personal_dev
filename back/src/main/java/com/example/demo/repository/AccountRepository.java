@@ -7,5 +7,5 @@ import com.example.demo.model.Account;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Integer> {
-	Account findByUserId(String userId);
+	Account findByUserid(String userid);
 }
